@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  margin: 5rem;
+  line-height: 1.6;
+  height: 100%;
+}
+
+.btn {
+  background: cadetblue;
+  padding: 0.55rem 2rem;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  background: #f4f4f4;
+  margin: 0.55rem auto;
+  border: 1px solid #888;
+  width: 60%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+.modal-header h2,
+.modal-footer h3,
+.modal-info h2 {
+  margin: 0;
+}
+
+.modal-header {
+  background: cadetblue;
+  color: white;
+  padding: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.modal-body {
+  padding: 10px 16px;
+  display: block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-footer {
+  background: cadetblue;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.modal-img {
+  width: auto;
+  height: 300px;
+  padding-top: 10px;
+}
+
+.modal-info {
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal-text {
+  padding: 0 4rem;
+  text-align: justify;
+  text-indent: 3rem;
+}
+
+.closeBtn {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
